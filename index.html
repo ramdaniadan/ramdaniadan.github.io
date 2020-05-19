@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	    <title>Hi Tuanku</title>
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
+	    <link rel="stylesheet" href="assets/css/style2.css">
+	    <link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body onload="init()">
+		<div class="kontrol" onload="readStorage()">
+			<div class="panah"></div>
+			<p>Choose Theme</p>
+				
+			<div class="custom-control custom-radio">
+		        <input type="radio" class="custom-control-input" id="customRadio0" name="example1" checked="">
+		        <label class="custom-control-label" for="customRadio0">Time Based</label>
+			</div>
+			
+			<div class="custom-control custom-radio">
+		        <input type="radio" class="custom-control-input" id="customRadio2" name="example1">
+		        <label class="custom-control-label" for="customRadio2">Dawn</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio3" name="example1">
+		    	<label class="custom-control-label" for="customRadio3">Morning</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio4" name="example1">
+		    	<label class="custom-control-label" for="customRadio4">Noon</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio5" name="example1">
+		    	<label class="custom-control-label" for="customRadio5">Afternoon</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio6" name="example1">
+		    	<label class="custom-control-label" for="customRadio6">Sunset</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio7" name="example1">
+		    	<label class="custom-control-label" for="customRadio7">Evening</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio8" name="example1">
+		    	<label class="custom-control-label" for="customRadio8">Midnight</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+		    	<label class="custom-control-label" for="customRadio1">Ubuntu Style</label>
+		    </div>   
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio9" name="example1">
+		    	<label class="custom-control-label" for="customRadio9">RGB</label>
+		    </div>
+
+		    <div class="custom-control custom-radio">
+		    	<input type="radio" class="custom-control-input" id="customRadio10" name="example1">
+		    	<label class="custom-control-label" for="customRadio10">Manual Input</label>
+		    </div>
+
+		    <input class="btn mt-3" type="button" id="color-picker" value="#0079FF" onclick="onClickWarna()">
+		</div>
+
+		<div class="bg ubuntu"></div>
+		<div class="bg dawn"></div>
+		<div class="bg morning"></div>
+		<div class="bg noon"></div>
+		<div class="bg afternoon"></div>
+		<div class="bg sunset"></div>
+		<div class="bg evening"></div>
+		<div class="bg midnight"></div>
+		<div class="bg red"></div>
+		<div class="bg green"></div>
+		<div class="bg blue"></div>
+		<div class="bg custom"></div>
+
+		<ul class="kotak">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+		<div class="quotes">
+			<p id="quotation"></p>
+			<p id="source"></p>
+		</div>
+
+		<div class="carousel slide" data-ride="carousel" data-interval="false" id="carousel-1" style="width: 100%;height: 100%;">
+			<div class="carousel-inner" role="listbox" style="height: 100%;">
+
+				<div class="carousel-item slide1" style="height: 100%;">
+					<!-- Swiper -->
+					<div class="container foto">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="nana1" src="assets/img/01-270.jpg"></div>
+								<div class="swiper-slide"><img class="nana2" src="assets/img/02-270.jpg"></div>
+								<div class="swiper-slide"><img class="nana3" src="assets/img/03-270.jpg"></div>
+								<div class="swiper-slide"><img class="nana4" src="assets/img/04-270.jpg"></div>
+								<div class="swiper-slide"><img class="nana5" src="assets/img/05-270.jpg"></div>
+								<div class="swiper-slide"><img class="nana6" src="assets/img/06-270.jpg"></div>
+								<div class="swiper-slide"><img class="nana7" src="assets/img/07-270.jpg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item slide2 active" style="height: 100%;">
+					<div class="container" style="height: auto;">
+
+	           			<div class="bulat">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+	            
+						<div class="jam" id="time">
+							00:00:00
+			            </div>
+						
+						<div class="ucapan" id="quote"></div>
+						<div class="note">Wushhhh</div>
+						<div class="note2">Wushhhh</div>
+						<div class="pengembang">Ramdani Adan</div>
+					</div>
+				</div>
+
+				<div class="carousel-item slide3">
+					<div class="css-typing">
+						<p>Today is ... As a beautiful as the other days</p>
+						<p>The rise and set of the sun, has been common phenomenon</p>
+						<p>But you realize ... Another year has gone</p>
+						<p>In a blink of the eyes.</p>
+						<p>However ... Do you know ?</p>
+						<p>Today is just special, so special to you</p>
+						<p>That's why, i made this website for you</p>
+						<p>Let's make it become the best celebration ever :)</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="height: 150px;margin-top: auto;margin-bottom: auto;">
+					<span class="carousel-control-prev-icon d-xl-flex" style="margin-right: auto;margin-left: 10%;"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next" style="height: 150px;margin-top: auto;min-height: 102px;max-height: 251px;margin-bottom: auto;">
+					<span class="carousel-control-next-icon" style="margin-left: auto;margin-right: 10%;"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<ol class="carousel-indicators" style="height: 12px;">
+	            <li data-target="#carousel-1" data-slide-to="0"></li>
+	            <li data-target="#carousel-1" data-slide-to="1" class="active"></li>
+	            <li data-target="#carousel-1" data-slide-to="2"></li>
+	       	</ol>
+	    </div>
+	    <script src="assets/js/jquery.min.js"></script>
+	    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="assets/js/popper.min.js"></script>
+	    <script src="assets/js/spectrum.min.js"></script>
+	    <script src="assets/js/baffle.min.js"></script>
+	    <script src="assets/js/script.js"></script>
+	    <script src="assets/js/swiper.min.js"></script>
+	    <script src="assets/js/script2.js"></script>
+	</body>
+</html>
