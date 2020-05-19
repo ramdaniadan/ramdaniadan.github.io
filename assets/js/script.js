@@ -188,7 +188,7 @@ function specialEffects()
 
 		setTimeout(function()
 		{
-			createNote3("GAnTI TEMANYA JADI WARNA HITAM, TERUS PENCET F5");
+			createNote3("GANTI TEMANYA JADI WARNA HITAM, TERUS PENCET F5 HEHEHEHEHE");
 		}, 5000);
 	}
 }
