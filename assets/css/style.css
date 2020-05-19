@@ -173,7 +173,7 @@ body
   transition: all 2s ease;
   opacity: 0;
   position: absolute;
-  top: 35%;
+  top: 21%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 20pt;
@@ -182,6 +182,20 @@ body
 }
 
  .note2
+{
+  color: white;
+  transition: all 2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20pt;
+  text-align: center;
+  width: 60%;
+}
+
+.note3
 {
   color: white;
   transition: all 2s ease;
@@ -406,7 +420,7 @@ body
 
 @media only screen and (max-width: 900px), screen and (max-height: 700px)
 {
-  .quotes, .note, .note2
+  .quotes, .note, .note2, .note3
   {
     font-size: 15pt;
   }
@@ -439,7 +453,7 @@ body
 
 @media only screen and (max-width: 500px)
 {
-  .note, .note2
+  .note, .note2, .note3
   {
     font-size: 10pt;
   }

@@ -22,6 +22,12 @@ baffleEffect2 = baffle('.note2',
 	speed: 150
 });
 
+baffleEffect3 = baffle('.note3',
+{
+	characters: 'supercalifragilisticexpialidocious',
+	speed: 150
+});
+
 function readMode()
 {
 	if(localStorage.getItem("mode") != null)
@@ -161,25 +167,28 @@ function specialEffects()
 		{
 			createNote("Happy birthday to the one and only the nicest people I have ever met. May this year be more wonderful and blessed.");
 		}, 5000);
+
 		setTimeout(function()
 		{
-			createNote2("Thank you for being born, thank you for being My Princess. Enjoy your journey until we celebrate your 20s,30s,40s,until 100s!!");
+			createNote2("Don’t ever feel down that you’re getting older. In my eyes, you are more gorgeous than ever");
 		}, 5000);
-	}
-	
-	else if(localStorage.getItem("manualColor") == "#0cd000")
-	{
+
 		setTimeout(function()
 		{
-			createNote2("Today is ... As a beautiful as the other days. The rise and set of the sun, has been common phenomenon");
+			createNote3("Thank you for being born, thank you for being my Tuan Putri. Enjoy your journey until we celebrate your 20s, 30s, 40s, until 100s!!");
 		}, 5000);
 	}
 
-	else if(localStorage.getItem("manualColor") == "#0e2ca0")
+	else if(localStorage.getItem("manualColor") == "#d5a6bd")
 	{
 		setTimeout(function()
 		{
-			createNote2("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod");
+			createNote2("TAPI BOONGGGGG 😋 AKWOKAOAWKOWAKOWAK");
+		}, 5000);
+
+		setTimeout(function()
+		{
+			createNote3("GAnTI TEMANYA JADI WARNA HITAM, TERUS PENCET F5");
 		}, 5000);
 	}
 }
@@ -212,6 +221,20 @@ function createNote2(isi2)
 	}, 3000);
 }
 
+function createNote3(isi3)
+{
+	$(".jam").css("font-size", "30pt").css("bottom", "calc( 50% - 50px )");
+	$(".ucapan").css("opacity", "0");
+	$(".quotes").css("opacity", "0");
+	$(".quotes").css("opacity", "0");
+	$(".bulat").css("opacity", "0");
+	$(".kotak li").css("opacity", "0");
+	setTimeout(function()
+	{
+		writeNote3(isi3);
+	}, 3000);
+}
+
 function writeNote(isi)
 {
 	$(".note").text(isi).css("opacity", "1");
@@ -228,6 +251,18 @@ function writeNote2(isi2)
 {
 	$(".note2").text(isi2).css("opacity", "1");
 	baffle('.note2').reveal(2000).start().set(
+	{
+		characters: '░░█ /<▒▓▒ ▒░▒█/ █/▒ ▒▓/█▒ ▓▒░▓ ██░ ▒░▓░ ▒░▓█',
+		speed: 150
+	});
+
+	localStorage.setItem("manualColor", "#0079FF");
+}
+
+function writeNote3(isi3)
+{
+	$(".note3").text(isi3).css("opacity", "1");
+	baffle('.note3').reveal(2000).start().set(
 	{
 		characters: '░░█ /<▒▓▒ ▒░▒█/ █/▒ ▒▓/█▒ ▓▒░▓ ██░ ▒░▓░ ▒░▓█',
 		speed: 150
