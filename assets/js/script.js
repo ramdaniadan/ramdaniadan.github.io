@@ -894,10 +894,14 @@ const quotes = [
 },
 {
 	"quote": "Aku tu baik, kamu aja yang suka bilang jahad",
-	"source": "SUAMI BAHAGIA"
+	"source": "Nana"
+},
+{
+	"quote": "Tidak ada yang bisa menghentikanku untuk rebahan",
+	"source": "Chyka Riena"
 },
 ]
-setInterval(randomQuote, 10000);
+setInterval(randomQuote, 9000);
 
 function randomQuote()
 {
