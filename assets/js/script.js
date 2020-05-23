@@ -165,17 +165,12 @@ function specialEffects()
 	{
 		setTimeout(function()
 		{
-			createNote("Happy birthday to the one and only the nicest people I have ever met. May this year be more wonderful and blessed.");
+			createNote2("Hi :)");
 		}, 5000);
 
 		setTimeout(function()
 		{
-			createNote2("Don’t ever feel down that you’re getting older. In my eyes, you are more gorgeous than ever");
-		}, 5000);
-
-		setTimeout(function()
-		{
-			createNote3("Thank you for being born, thank you for being my Tuan Putri. Enjoy your journey until we celebrate your 20s, 30s, 40s, until 100s!!");
+			createNote3("Coba ganti ke #d5a6bd, terus refresh");
 		}, 5000);
 	}
 
@@ -183,12 +178,7 @@ function specialEffects()
 	{
 		setTimeout(function()
 		{
-			createNote2("TAPI BOONGGGGG 😋 AKWOKAOAWKOWAKOWAK");
-		}, 5000);
-
-		setTimeout(function()
-		{
-			createNote3("GANTI TEMANYA JADI WARNA HITAM, TERUS PENCET F5 HEHEHEHEHE");
+			createNote3("I LOVE YOU 💙💙💙");
 		}, 5000);
 	}
 }
@@ -200,7 +190,6 @@ function createNote(isi)
 	$(".quotes").css("opacity", "0");
 	$(".quotes").css("opacity", "0");
 	$(".bulat").css("opacity", "0");
-	$(".kotak li").css("opacity", "0");
 	setTimeout(function()
 	{
 		writeNote(isi);
@@ -214,7 +203,6 @@ function createNote2(isi2)
 	$(".quotes").css("opacity", "0");
 	$(".quotes").css("opacity", "0");
 	$(".bulat").css("opacity", "0");
-	$(".kotak li").css("opacity", "0");
 	setTimeout(function()
 	{
 		writeNote2(isi2);
@@ -228,7 +216,6 @@ function createNote3(isi3)
 	$(".quotes").css("opacity", "0");
 	$(".quotes").css("opacity", "0");
 	$(".bulat").css("opacity", "0");
-	$(".kotak li").css("opacity", "0");
 	setTimeout(function()
 	{
 		writeNote3(isi3);
@@ -517,9 +504,7 @@ function red()
 {
 	$(".jam").css("color", "#F00");
 	$(".ucapan").css("color", "#F00");
-	$(".css-typing").css("color", "#F00");
 	$(".bulat span").css("border-color", "#F00");
-	$(".kotak li").css("background", "#000");
 	$(".red").animate({opacity: "1"}, 1000);
 	$(".midnight").animate({opacity: "0"}, 500);
 	$(".dawn").animate({opacity: "0"}, 500);
@@ -539,9 +524,7 @@ function green()
 {
 	$(".jam").css("color", "#0F0");
 	$(".ucapan").css("color", "#0F0");
-	$(".css-typing").css("color", "#00F");
 	$(".bulat span").css("border-color", "#0F0");
-	$(".kotak li").css("background", "#000");
 	$(".green").animate({opacity: "1"}, 1000);
 	$(".midnight").animate({opacity: "0"}, 500);
 	$(".dawn").animate({opacity: "0"}, 500);
@@ -561,9 +544,7 @@ function blue()
 {
 	$(".jam").css("color", "#00F");
 	$(".ucapan").css("color", "#00F");
-	$(".css-typing").css("color", "#00F");
 	$(".bulat span").css("border-color", "#00F");
-	$(".kotak li").css("background", "#000");
 	$(".blue").animate({opacity: "1"}, 1000);
 	$(".midnight").animate({opacity: "0"}, 500);
 	$(".dawn").animate({opacity: "0"}, 500);
@@ -627,11 +608,8 @@ function black()
 	$(".jam").css("color", "#000");
 	$(".ucapan").css("color", "#000");
 	$(".quotes").css("color", "#000");
-	$(".css-typing").css("color", "#000")
-	$(".css-typing").css("text-shadow", "0px 0px 10px #FFF")
 	$(".quotes").css("text-shadow", "0px 0px 10px #FFF");
 	$(".bulat span").css("border-color", "#000");
-	$(".kotak li").css("background", "#000");
 }
 
 function fillblack()
@@ -649,11 +627,8 @@ function white()
 	$(".jam").css("color", "#FFF");
 	$(".ucapan").css("color", "#FFF");
 	$(".quotes").css("color", "#FFF");
-	$(".css-typing").css("color", "#FFF")
-	$(".css-typing").css("text-shadow", "0px 0px 10px #000");
 	$(".quotes").css("text-shadow", "0px 0px 10px #000");
 	$(".bulat span").css("border-color", "#FFF");
-	$(".kotak li").css("background", "#FFF");
 }
 
 function debug()
@@ -687,58 +662,9 @@ function startTime()
 	M = m;
 	S = s;
 
-	if (H < 4)
+	if (H <= 24)
 	{
-		txt = 'Have a Good Night 🧡💙';
-		if(txt != txt2 && !starting)
-			document.getElementById("quote").innerHTML = txt;
-		txt2 = txt;
-	}
-	
-	else if(H < 9)
-	{
-		txt = 'Good Morning You 😇';
-		if(txt != txt2 && !starting)
-			document.getElementById("quote").innerHTML = txt;
-		txt2 = txt;
-	}
-	
-	else if(H < 12)
-	{
-		txt = 'Be Happy Today Babe 😉';
-		
-		if(txt != txt2 && !starting)
-			document.getElementById("quote").innerHTML = txt;
-		txt2 = txt;
-	}
-	
-	else if(H < 16)
-	{
-		txt = 'Good Afternoon 😩';
-		if(txt != txt2 && !starting)
-			document.getElementById("quote").innerHTML = txt;
-		txt2 = txt;
-	}
-				
-	else if(H < 19)
-	{
-		txt = 'Good Afternoon, Take a Rest 🧡💙';
-		if(txt != txt2 && !starting)
-			document.getElementById("quote").innerHTML = txt;
-		txt2 = txt;
-	}
-	
-	else if(H < 22)
-	{
-		txt = 'Good Evening Sweetie 🧡💙';
-		if(txt != txt2 && !starting)
-			document.getElementById("quote").innerHTML = txt;
-		txt2 = txt;
-	}
-	
-	else if(H <= 24)
-	{
-		txt='Time to Sleep, Good Night 🧡💙';
+		txt = 'HAPPY EID MUBARAK 1441 H';
 		if(txt != txt2 && !starting)
 			document.getElementById("quote").innerHTML = txt;
 		txt2 = txt;
@@ -809,99 +735,27 @@ function init_auto()
 
 const quotes = [
 {
-	"quote": "7777",
-	"source": "Tuan Putri & Rakyatnya"
+	"quote": "Selamat hari raya Idul Fitri, Mohon maaf lahir dan batin 🙏",
+	"source": "Adan & Keluarga"
 },
 {
-	"quote": "There's no absolute sadness or happiness. Look above the sky, there's always orange after blue",
-	"source": "Chyka Riena"
+	"quote": "Tidak ada pemberian yang paling sempurna di hari yang fitrah ini, selain maaf darimu. Selamat hari raya Idul Fitri, Mohon maaf lahir dan batin 🙏",
+	"source": "Adan & Keluarga"
 },
 {
-	"quote": "Hei...kapasitas otakku megabyte, bukan terabyte sepertimu",
-	"source": "Chyka Riena"
+	"quote": "Mata dapat salah lihat, telinga dapat salah dengar, mulut dapat salah bicara, hati dapat salah sangka. Di hari yang fitri ini, mohon maaf lahir dan batin 🙏",
+	"source": "Adan & Keluarga"
 },
 {
-	"quote": "Don't ruin a good day, because of bad yesterday",
-	"source": "Irene (Istrinya Adan)"
+	"quote": "Bulan Ramadhan yang suci telah berlalu. Semoga keberkahan dan kebaikan bulan suci masih terus terasa hingga nanti. Selamat Hari Raya Idul Fitri 1441 H",
+	"source": "Adan & Keluarga"
 },
 {
-	"quote": "I own my own life and my own decission",
-	"source": "Ramdani Adan"
-},
-{
-	"quote": "Every failure, rejection, betrayal should be the reason for you to come back stronger in life by working on goals and achiving them",
-	"source": "Ramdani Adan"
-},
-{
-	"quote": "Just laying around and doing nothing",
-	"source": "Irene (Kembaran Nana)"
-},
-{
-	"quote": "Memang rakyat teladan",
-	"source": "Tuan Putri Nana"
-},
-{
-	"quote": "People doesn't want to end their life, they just wanted to end the pain",
-	"source": "Ramdani Adan"
-},
-{
-	"quote": "Punya tuan gaada akhlak",
-	"source": "Rakyat Terdzolimi"
-},
-{
-	"quote": "Enak banget rebahan yaampun",	
-	"source": "Chyka Riena"
-},
-{
-	"quote": "Jika hari ini harus lebih baik daripada hari kemarin dan hari esok lebih baik daripada hari ini maka kelahiranmu adalah hari terburuk yang pernah ada",
-	"source": "Ramdani Adan"
-},
-{
-	"quote": "🐍🐍🐍",
-	"source": "Tuan Putri Nana"
-},
-{
-	"quote": "Nanaaaaa...Kalau malem tuh pulang, jangan mesum di kebon",
-	"source": "Pangeran Baik Hati"
-},
-{
-	"quote": "Tuan Putriku Tersayangggggg 🧡💙",
-	"source": "Pangeran Tampan"
-},
-{
-	"quote": "🐽 Kangen",
-	"source": "Pangeran Tampan"
-},
-{
-	"quote": "Aku cantik, aku mirip Irene",
-	"source": "Tuan Laknat"
-},
-{
-	"quote": "Iya iyaa...Aku jelek",
-	"source": "Tuan Putri Nana"
-},
-{
-	"quote": "SEMIOTIKA DEADLINE 16 APRIL",
-	"source": "Chyka Riena"
-},
-{
-	"quote": "Minum jahe atau minum susu ya ? Minum air jeruk aja deh. Tapi aku pengen pepsi, jadi aku sekarang minum Coca-cola",
-	"source": "ORANG RANDOM"
-},
-{
-	"quote": "Mau berapa kali sih aku ingetin ? Kamu tuh isteri ke-4 aku.",
-	"source": "SUAMI BAHAGIA"
-},
-{
-	"quote": "Aku tu baik, kamu aja yang suka bilang jahad",
-	"source": "Nana"
-},
-{
-	"quote": "Tidak ada yang bisa menghentikanku untuk rebahan",
-	"source": "Chyka Riena"
+	"quote": "Untuk lisan yang tak terjaga, janji yang tak terpenuhi, hati yang kerap berprasangka. Dengan penuh keikhlasan mohon maaf lahir dan batin 🙏",
+	"source": "Adan & Keluarga"
 },
 ]
-setInterval(randomQuote, 9000);
+setInterval(randomQuote, 15000);
 
 function randomQuote()
 {
