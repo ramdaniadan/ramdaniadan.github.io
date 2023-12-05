@@ -636,7 +636,7 @@ function debug()
 	console.log('debug');
 }
 
-var txt = 'Hai Chyka';
+var txt = 'Hai';
 var txt2 = 'hiyaaa	';
 
 function checkTime(i)
@@ -662,13 +662,63 @@ function startTime()
 	M = m;
 	S = s;
 
-	if (H <= 24)
+	if (H < 4)
 	{
-		txt = 'HAPPY EID MUBARAK 1441 H';
+		txt = 'Good Night';
 		if(txt != txt2 && !starting)
 			document.getElementById("quote").innerHTML = txt;
 		txt2 = txt;
 	}
+
+	else if(H < 9)
+	{
+		txt = 'Good Morning';
+		if(txt != txt2 && !starting)
+			document.getElementById("quote").innerHTML = txt;
+		txt2 = txt;
+	}
+
+	else if(H < 12)
+	{
+		txt = 'Be Happy Today';
+
+		if(txt != txt2 && !starting)
+			document.getElementById("quote").innerHTML = txt;
+		txt2 = txt;
+	}
+
+	else if(H < 16)
+	{
+		txt = 'Good Afternoon';
+		if(txt != txt2 && !starting)
+			document.getElementById("quote").innerHTML = txt;
+		txt2 = txt;
+	}
+
+	else if(H < 19)
+	{
+		txt = 'Good Afternoon, Take a Rest';
+		if(txt != txt2 && !starting)
+			document.getElementById("quote").innerHTML = txt;
+		txt2 = txt;
+	}
+
+	else if(H < 22)
+	{
+		txt = 'Good Evening Sweetie';
+		if(txt != txt2 && !starting)
+			document.getElementById("quote").innerHTML = txt;
+		txt2 = txt;
+	}
+
+	else if(H <= 24)
+	{
+		txt='Time to Sleep, Good Night';
+		if(txt != txt2 && !starting)
+			document.getElementById("quote").innerHTML = txt;
+		txt2 = txt;
+	}
+
 	
 	starting = false;
 
