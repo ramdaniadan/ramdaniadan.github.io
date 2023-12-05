@@ -785,24 +785,24 @@ function init_auto()
 
 const quotes = [
 {
-	"quote": "Selamat hari raya Idul Fitri, Mohon maaf lahir dan batin 🙏",
-	"source": "Adan & Keluarga"
+	"quote": "The only way to do great work is to love what you do.",
+	"source": "Steve Jobs"
 },
 {
-	"quote": "Tidak ada pemberian yang paling sempurna di hari yang fitrah ini, selain maaf darimu. Selamat hari raya Idul Fitri, Mohon maaf lahir dan batin 🙏",
-	"source": "Adan & Keluarga"
+	"quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+	"source": "Winston Churchill"
 },
 {
-	"quote": "Mata dapat salah lihat, telinga dapat salah dengar, mulut dapat salah bicara, hati dapat salah sangka. Di hari yang fitri ini, mohon maaf lahir dan batin 🙏",
-	"source": "Adan & Keluarga"
+	"quote": "The future belongs to those who believe in the beauty of their dreams.",
+	"source": "Eleanor Roosevelt"
 },
 {
-	"quote": "Bulan Ramadhan yang suci telah berlalu. Semoga keberkahan dan kebaikan bulan suci masih terus terasa hingga nanti. Selamat Hari Raya Idul Fitri 1441 H",
-	"source": "Adan & Keluarga"
+	"quote": "The only place where success comes before work is in the dictionary.",
+	"source": "Vidal Sassoon"
 },
 {
-	"quote": "Untuk lisan yang tak terjaga, janji yang tak terpenuhi, hati yang kerap berprasangka. Dengan penuh keikhlasan mohon maaf lahir dan batin 🙏",
-	"source": "Adan & Keluarga"
+	"quote": "The only way to achieve the impossible is to believe it is possible.",
+	"source": "Charles Kingsleigh"
 },
 ]
 setInterval(randomQuote, 15000);
